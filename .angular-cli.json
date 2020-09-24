@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "partner-people"
+    "name": "Visualize-SS"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "app",
       "assets": [
         "assets",
         "favicon.ico"

@@ -1,0 +1,24 @@
+<div class="wow fadeInRight graph-container">
+  <div class="title">
+      2014 Global (Land) Temperature Contour
+  </div>
+
+  <div class="description">	
+    Monthly-mean air temperature raw data for the year 2014 comes from <a href="http://climate.geog.udel.edu/~climate/html_pages/download.html#T2011" target="_blanl">this source</a>.
+    The raw data interpolates to a 0.5 by 0.5 degree grid resolution (centered on 0.25 degree).
+    However, I use R to reformat the data in to a JSON file interpolated to a 2 by 2 degree grid resolution
+    for this visualization.
+  </div>
+
+  <div id="month">{{months[selected]}}</div>  
+  <div class="slide-container">
+    <input type="range" min="1" max="12" [value]="selected+1" step="1" class="slider"
+    #slider (change)="selectedMonthChange(slider.value)">
+  </div>
+  <select class="contour-select" #stroke (change)="strokeChange(stroke.value)">
+    <option value="none" selected="selected">None</option>
+    <option value="black">Black</option>
+    <option value="white">White</option>
+    <option value="steelblue">Blue</option>
+  </select>
+</div>

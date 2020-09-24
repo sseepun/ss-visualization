@@ -1,0 +1,46 @@
+
+*>>> .scale-bg {fill: #dddddd;}
+
+*>>> .time-label {text-anchor: middle; font-weight: 600;}
+*>>> .day-label {text-anchor: end; text-transform: capitalize; font-weight: 600;}
+
+*>>> .heatblock {pointer-events: auto; fill: #c5c5c5;}
+*>>> .heatblock:hover {stroke: #000000; stroke-width: 2px;}
+
+*>>> .province {
+    fill: #c5c5c5; stroke: #ffffff; stroke-width: 1px; stroke-opacity: 0.4;
+    pointer-events: auto; cursor: pointer;
+}
+*>>> .province:hover {fill: #888888;}
+*>>> .province.active {fill: #444444;}
+
+*>>> .btn-rect {
+    fill: #d3d3d3; stroke: #c5c5c5; pointer-events: auto; cursor: pointer;
+    transition: 0.3s fill;
+}
+*>>> .btn-text {fill: #888888; text-anchor: middle; transition: 0.3s fill; pointer-events: none;}
+*>>> .btn.active .btn-rect {fill: #444444;}
+*>>> .btn.active .btn-text {fill: #ffffff;}
+
+*>>> .pie {
+    fill: #d3d3d3; transition: 0.3s fill; 
+    stroke: #ffffff; stroke-width: 2px; stroke-opacity: 0.5;
+}
+*>>> .pie#computer {fill: #bdbdbd;}
+*>>> .pie.inactive {fill: #bdbdbd !important;}
+*>>> .pie.active {fill: #444444 !important;}
+
+*>>> .pie-space .computer {fill: #bdbdbd;  transition: 0.3s fill;}
+*>>> .pie-space .mobile {fill: #c5c5c5; text-anchor: end;  transition: 0.3s fill;}
+*>>> .pie-space .inactive {fill: #bdbdbd !important;}
+*>>> .pie-space .active {fill: #444444 !important;}
+
+*>>> .province-name {fill: #444444; text-anchor: middle;}
+
+*>>> .thai-btn.active .btn-rect {fill: #444444;}
+*>>> .thai-btn.active .btn-text {fill: #ffffff;}
+
+*>>> .bar-day {text-anchor: middle;}
+*>>> .bar-type {fill: #888888; text-transform: capitalize;}
+*>>> .bar {fill: #d3d3d3;}
+*>>> .bar-slot.active .bar {fill: #444444 !important;}

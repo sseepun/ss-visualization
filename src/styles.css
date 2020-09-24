@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: #000000;
+    min-height: 100vh; overflow: hidden;
+    background: linear-gradient(#010207, #08589d);
+}
+
+.graph-container {position: relative; padding: 1vw 0 1.5vw 0;}
+.title {
+    width: 100%; text-align: center; font-size: 2.2vw; font-weight: 600; margin-bottom: 2vw;
+}
+.description {
+    font-size: 1.2vw; margin-bottom: 2vw; line-height: 2.4vw;
+}
+
+.separator {display: block; width: 100%; clear: both; height: 1px;}
